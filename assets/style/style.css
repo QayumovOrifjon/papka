@@ -1,0 +1,889 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-image: url(../image/bacround/bacround1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header .time__header {
+  height: 100px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+}
+header .time__header .header__Left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .time__header .header__Left a {
+  margin-left: 10px;
+}
+header .time__header .header__Left div {
+  display: flex;
+  gap: 10px;
+}
+header .time__header .header__Left :last-child {
+  color: white;
+}
+header .time__header .header__Right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .time__header .header__Right img {
+  display: none;
+}
+header .time__header .header__Right ul {
+  gap: 20px;
+  display: flex;
+}
+header .time__header .header__Right ul :hover {
+  color: blue;
+}
+header .time__header .header__Right ul li a {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+header .time__header .header__Right ul select {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header .time__header .header__Right ul select :focus {
+  background-color: transparent;
+}
+header .time__header .header__Right ul select option {
+  background-color: rgb(40, 35, 35);
+}
+header .time__header .header__Right .head__butt {
+  height: 100px;
+  padding: 10px;
+  background: rgb(106, 54, 156);
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+header .header__bottom {
+  padding-top: 100px;
+}
+header .container div h1 {
+  color: rgb(243, 243, 243);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 68px;
+  letter-spacing: 0%;
+  margin-bottom: 30px;
+}
+header .container div p {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+header .container div .header__bottom-btn button {
+  padding: 8px 30px;
+  background-color: transparent;
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  border-color: white;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+header .container div .header__bottom-btn button:hover {
+  background-color: white;
+  color: black;
+}
+header .container div .header_bottom-btntwo {
+  display: none;
+}
+header .container :last-child {
+  flex-direction: column;
+}
+header .container :last-child h1 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+header .container :last-child .herader__stat {
+  display: flex;
+  gap: 80px;
+}
+header .container :last-child .herader__stat div {
+  flex-direction: column;
+}
+header .container :last-child .herader__stat div h1 {
+  color: rgb(4, 255, 20);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+header .container :last-child .herader__stat div p {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+header .container :last-child img {
+  padding-bottom: 322px;
+}
+
+.fact {
+  display: none;
+  padding: 50px;
+  background-color: rgb(33, 37, 41);
+}
+.fact h1 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  padding-bottom: 30px;
+}
+.fact .herader__stat {
+  display: flex;
+  justify-content: space-between;
+}
+.fact .herader__stat div h1 {
+  color: rgb(4, 255, 20);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  padding-bottom: 17px;
+}
+.fact .herader__stat div p {
+  color: rgb(243, 243, 243);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0%;
+  margin-bottom: 50px;
+}
+
+.header__bott-one {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-image: url(../image/bacround/bacround1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  header .time__header .header__Right ul {
+    display: none;
+  }
+  header .time__header .header__Right img {
+    display: block;
+  }
+  header .time__header .header__Left {
+    gap: 10px;
+  }
+  header .header__bottom {
+    padding-left: 70px;
+  }
+  header .header__bottom .container div h1 {
+    font-size: 40px;
+  }
+  header .header__bottom .container div p {
+    font-size: 18px;
+  }
+  header .header__bottom .container div .header__bottom-btn {
+    display: none;
+  }
+  header .header__bottom .container div .header_bottom-btntwo {
+    display: block;
+  }
+  header .header__bottom .container div .header_bottom-btntwo :nth-child(3) {
+    display: none;
+  }
+  header .header__bottom .container div .header_bottom-btntwo button {
+    padding: 8px 30px;
+    background-color: transparent;
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    border-color: white;
+    margin-bottom: 100px;
+    cursor: pointer;
+  }
+  header .header__bottom .container div .header_bottom-btntwo button:hover {
+    background-color: white;
+    color: black;
+  }
+  header .header__bottom .container :last-child h1 {
+    font-size: 24px;
+  }
+  header .header__bottom .container :last-child .herader__stat {
+    gap: 40px;
+  }
+  header main .about .about__top {
+    gap: 0;
+  }
+  header main .about .about__top .container .about__top-left {
+    padding: 50px 50px 0 50px;
+    margin: 0;
+  }
+  header main .about .about__top .container .about__top-left div h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  header main .about .about__top .container .about__top-left div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  header main .about .about__top .container .about__top-left div div p {
+    font-size: 16px;
+  }
+  header main .about .about__top .container .about__top-left div div img {
+    width: 24px;
+    height: 24px;
+  }
+  header main .about .about__top :last-child img {
+    width: 460px;
+    height: 100%;
+  }
+  header main .about .about__bottom .about__top-left img {
+    width: 468px;
+    height: 100%;
+  }
+  header main .about .about__bottom .container .about__top-left {
+    padding: 50px 50px 0 50px;
+  }
+  header main .about .about__bottom .container .about__top-left div h1 {
+    font-size: 24px;
+  }
+  header main .about .about__bottom .container .about__top-left div p {
+    font-size: 16px;
+  }
+  header main .about .about__bottom .container .about__top-left div div p {
+    font-size: 16px;
+  }
+  header main .about .about__bottom .container .about__top-left div div img {
+    width: 24px;
+    height: 24px;
+  }
+  header main .cards {
+    padding: 70px 20px;
+  }
+  header main .cards .container {
+    gap: 9px;
+  }
+  header main .cards .container .card__active {
+    padding: 10px;
+  }
+  header main .cards .container .card__active h1 {
+    font-size: 20px;
+  }
+  header main .cards .container .card__active p {
+    font-size: 15px;
+  }
+  header main .cards .container .card__active img {
+    width: 100%;
+    height: 150px;
+  }
+  header main .truck__team .container .truck__team-text {
+    padding: 100px 40px;
+  }
+  header main .truck__team .container .truck__team-text h1 {
+    font-size: 36px;
+  }
+  header main .truck__team .container .truck__team-text p {
+    font-size: 20px;
+  }
+  header main .career .container .values {
+    gap: 50px;
+  }
+  header main .career .container .career__bott {
+    margin-right: 30px;
+    margin-left: 80px;
+    display: flex;
+  }
+  header main .career .container .career__bott .career__bott-left {
+    padding: 40px;
+  }
+  header main .career .container .career__bott .career__bott-right img {
+    width: 100%;
+    height: 100%;
+  }
+  header main .career .container .career__socials div {
+    padding: 0 70px;
+    display: flex;
+    justify-content: none;
+    gap: 0;
+  }
+  header main .career .container .career__socials div img {
+    width: 130px;
+    height: 100px;
+  }
+  header footer .footer__top .container .footer__top-active {
+    padding: 0 70px;
+    gap: 15px;
+  }
+  header footer .foot__bott .container .foot__subtitle {
+    padding: 0 70px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 768px) {
+  header .time__header .header__Left div {
+    display: none;
+  }
+  header .header__bottom .container div h1 {
+    font-size: 24px;
+  }
+  header .header__bottom .container div p {
+    font-size: 15px;
+  }
+  header .header__bottom .container div .header__bottom-btn {
+    display: block;
+  }
+  header .header__bottom .container div .header__bottom-btn button {
+    margin-bottom: 10px;
+  }
+  header .header__bottom .container :last-child {
+    display: none;
+  }
+  .fact {
+    display: block;
+  }
+  .fact img {
+    width: 90%;
+  }
+  .fact .herader__stat {
+    display: flex;
+  }
+  .fact .herader__stat div {
+    gap: 4%;
+    display: flex;
+  }
+  .fact .herader__stat div div {
+    flex-direction: column;
+  }
+  main .about .about__top {
+    flex-direction: column-reverse;
+  }
+  main .about .about__top .container .about__top-left div h1 {
+    font-size: 24px;
+  }
+  main .about .about__top .about__top-right img {
+    width: 100%;
+  }
+  main .about .about__bottom {
+    flex-direction: column;
+  }
+  main .about .about__bottom .about__top-left img {
+    width: 100%;
+  }
+  main .cards .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main .cards .container .card__active {
+    max-width: 260px;
+    margin-bottom: 40px;
+  }
+  main .career .container .values {
+    padding: 20px;
+    flex-direction: column;
+  }
+  main .career .container .values .values__text {
+    gap: 10px;
+  }
+  main .career .career__bott .career__bott-left {
+    margin-left: -100px;
+  }
+  main .career .career__bott .career__bott-right img {
+    width: 106.8%;
+    margin-right: -50px;
+  }
+  main .career .career__socials h1 {
+    font-size: 24px;
+  }
+  main .career .career__socials .career__social {
+    padding: 0 20px;
+  }
+  main .career .career__socials .career__social img {
+    width: 60px;
+    height: 60px;
+  }
+  footer .footer__top .container .footer__top-active {
+    gap: 0px;
+    padding: 0 20px;
+  }
+  footer .footer__top .container .footer__top-active :nth-child(3) {
+    max-width: 100px;
+  }
+  footer .footer__top .container .footer__top-active :nth-child(3) .list__text {
+    display: block;
+  }
+  footer .footer__top .container .footer__top-active :nth-child(2) .list__text {
+    display: block;
+  }
+  footer .footer__top .container .footer__top-active .list__title {
+    display: none;
+  }
+  footer .footer__bottom .container .foot__subtitle {
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 1200px) and (max-width: 375px) {
+  header {
+    height: 300px;
+  }
+  header .time__header .header__Left a img {
+    width: 148px;
+    height: 25px;
+  }
+  header .time__header .header__Right {
+    padding-right: 4%;
+  }
+  header .time__header .header__Right button {
+    display: none;
+  }
+  header .header__bottom {
+    display: none;
+  }
+  .header__bott-one {
+    display: block;
+    background-color: rgb(33, 37, 41);
+    padding: 4%;
+  }
+  .header__bott-one .container div h1 {
+    color: white;
+  }
+  .header__bott-one .container div p {
+    color: white;
+  }
+  .header__bott-one .container div .header__bottom-btn {
+    display: none;
+  }
+  .header__bott-one .container div .header_bottom-btntwo {
+    display: block;
+    padding-top: 5%;
+    row-gap: 10px;
+  }
+  .header__bott-one .container div .header_bottom-btntwo button {
+    margin-top: 10px;
+    background-color: transparent;
+    border-color: white;
+    padding: 3%;
+    width: 100%;
+    color: rgb(243, 243, 243);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .header__bott-one .container div .header_bottom-btntwo button:hover {
+    background: rgb(106, 54, 156);
+  }
+  .header__bott-one .container :last-child {
+    display: none;
+  }
+  .fact .herader__stat {
+    flex-direction: column;
+  }
+  .fact .herader__stat div {
+    display: flex;
+  }
+  .fact .herader__stat div div {
+    flex-direction: column;
+  }
+  main .about .about__top .container .about__top-left {
+    padding: 10%;
+  }
+  main .about .about__bottom .container .about__top-left {
+    padding: 10%;
+  }
+  main .cards .container .card__active {
+    margin: 0 auto;
+  }
+  main .truck__team {
+    background-image: url("../image/bacround/bacimg.png");
+  }
+  main .truck__team .container .truck__team-text {
+    padding-top: 200px;
+  }
+  main .truck__team .container .truck__team-text h1 {
+    font-size: 20px;
+  }
+  main .truck__team .container .truck__team-text p {
+    font-size: 15px;
+  }
+  main .career .container .values .values__text {
+    flex-direction: column;
+    padding: 5%;
+  }
+  main .career .container .values .values__text div ul {
+    list-style: circle;
+  }
+  main .career .container .values .values__text div ul li::marker {
+    color: white;
+  }
+  main .career .container .career__bott {
+    flex-direction: column-reverse;
+  }
+  main .career .container .career__bott .career__bott-left {
+    width: 110%;
+  }
+  main .career .container .career__bott .career__bott-left button {
+    width: 100%;
+  }
+  main .career .container .career__bott .career__bott-right {
+    margin-left: -80px;
+  }
+  main .career .container .career__bott .career__bott-right img {
+    width: 100%;
+  }
+  main .career .container .career__socials .career__social {
+    flex-direction: column;
+    padding: 0;
+  }
+  main .career .container .career__socials .career__social img {
+    margin: 0 auto;
+    width: 60%;
+  }
+  footer .footer__top .container .footer__top-active {
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  footer .footer__top .container .footer__top-active div {
+    margin-bottom: 10px;
+    flex-direction: column;
+  }
+  footer .footer__top .container .footer__top-active div h1 {
+    width: 100%;
+  }
+  footer .footer__top .container .footer__top-active div p {
+    width: 100%;
+  }
+  footer .footer__top .container .footer__top-active div p a {
+    width: 100%;
+  }
+}
+.about .about__top {
+  display: flex;
+  gap: 84px;
+  background-color: rgb(33, 37, 41);
+}
+.about .about__top .container .about__top-left {
+  padding-left: 200px;
+  margin-top: 111px;
+}
+.about .about__top .container .about__top-left div h1 {
+  margin-bottom: 25px;
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+.about .about__top .container .about__top-left div p {
+  margin-bottom: 45px;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.about .about__top .container .about__top-left div :last-child {
+  display: flex;
+  gap: 8px;
+}
+.about .about__top .container .about__top-left div :last-child p {
+  color: rgb(4, 255, 20);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.about__bottom {
+  display: flex;
+  background-color: rgb(33, 37, 41);
+}
+.about__bottom :last-child .about__top-left {
+  padding: 99px 99px 0 99px;
+}
+.about__bottom :last-child .about__top-left div h1 {
+  margin-bottom: 25px;
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+.about__bottom :last-child .about__top-left div p {
+  margin-bottom: 45px;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+.about__bottom :last-child .about__top-left div :last-child {
+  display: flex;
+  gap: 8px;
+}
+.about__bottom :last-child .about__top-left div :last-child p {
+  color: rgb(4, 255, 20);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.cards {
+  padding-top: 120px;
+  background-color: rgb(39, 43, 48);
+}
+.cards .container {
+  display: flex;
+  gap: 20px;
+}
+.cards .container .card__active {
+  background-color: rgb(33, 37, 41);
+  padding: 30px;
+  margin-bottom: 100px;
+}
+.cards .container .card__active h1 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.cards .container .card__active p {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+.truck__team-text {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+.truck__team-text h1 {
+  color: rgb(243, 243, 243);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+.truck__team-text p {
+  color: rgb(243, 243, 243);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.truck__team {
+  background-image: url("../image/bacround/bacround2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.career {
+  background-color: rgb(33, 37, 41);
+}
+.career .container .values {
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+.career .container .values :first-child h1 {
+  color: rgb(243, 243, 243);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0%;
+}
+.career .container .values :first-child p {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+}
+.career .container .values .values__text {
+  display: flex;
+  gap: 70px;
+}
+.career .container .values .values__text div ul {
+  list-style: square;
+}
+.career .container .values .values__text div ul li::marker {
+  color: rgb(4, 255, 20);
+}
+.career .container .values .values__text div ul li {
+  color: rgb(243, 243, 243);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+.career .container .career__bott {
+  display: flex;
+  margin-bottom: 90px;
+}
+.career .container .career__bott .career__bott-left {
+  padding: 100px 66px 0 120px;
+  background: rgb(82, 31, 132);
+}
+.career .container .career__bott .career__bott-left h1 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+.career .container .career__bott .career__bott-left p {
+  color: rgb(164, 102, 225);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 180%;
+  letter-spacing: 0%;
+}
+.career .container .career__bott .career__bott-left button {
+  background-color: transparent;
+  padding: 5px 8px;
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0%;
+  border-color: rgb(243, 243, 243);
+  margin-top: 30px;
+  cursor: pointer;
+}
+.career .container .career__socials {
+  padding-bottom: 90px;
+}
+.career .container .career__socials h1 {
+  text-align: center;
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-bottom: 90px;
+  cursor: pointer;
+}
+.career .container .career__socials :last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .location iframe {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+footer .footer__top {
+  background-color: rgb(39, 43, 48);
+  padding-bottom: 25px;
+}
+footer .footer__top .container .footer__top-active {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer__top .container .footer__top-active :first-child h1 {
+  color: rgb(243, 243, 243);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-bottom: 13px;
+}
+footer .footer__top .container .footer__top-active div h1 {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-bottom: 8px;
+}
+footer .footer__top .container .footer__top-active div p a {
+  color: rgb(243, 243, 243);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+footer .footer__top .container .footer__top-active div .list__text {
+  display: none;
+}
+footer .foot__bott {
+  background: rgb(47, 50, 53);
+  cursor: pointer;
+}
+
+.foot__subtitle {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.foot__subtitle p {
+  color: rgb(175, 175, 175);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

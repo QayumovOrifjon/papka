@@ -1,0 +1,573 @@
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+    background-image: url(../image/bacround/bacround1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .time__header {
+      .header__Right {
+        ul {
+          display: none;
+        }
+        img {
+          display: block;
+        }
+      }
+      .header__Left {
+        gap: 10px;
+      }
+    }
+
+    .header__bottom {
+      padding-left: 70px;
+      .container {
+        div {
+          h1 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 18px;
+          }
+          .header__bottom-btn {
+            display: none;
+          }
+          .header_bottom-btntwo {
+            display: block;
+            :nth-child(3) {
+              display: none;
+            }
+            button {
+              padding: 8px 30px;
+              background-color: transparent;
+              color: rgb(243, 243, 243);
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 130%;
+              letter-spacing: 0%;
+              border-color: white;
+              margin-bottom: 100px;
+              cursor: pointer;
+            }
+            button:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+        :last-child {
+          h1 {
+            font-size: 24px;
+          }
+          .herader__stat {
+            gap: 40px;
+          }
+        }
+      }
+    }
+
+    main {
+      .about {
+        .about__top {
+          gap: 0;
+          .container {
+            .about__top-left {
+              padding: 50px 50px 0 50px;
+              margin: 0;
+              div {
+                h1 {
+                  font-size: 24px;
+                  margin-bottom: 10px;
+                }
+                p {
+                  font-size: 16px;
+                  margin-bottom: 10px;
+                }
+                div {
+                  p {
+                    font-size: 16px;
+                  }
+                  img {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+            }
+          }
+          :last-child {
+            img {
+              width: 460px;
+              height: 100%;
+            }
+          }
+        }
+        .about__bottom {
+          .about__top-left {
+            img {
+              width: 468px;
+              height: 100%;
+            }
+          }
+          .container {
+            .about__top-left {
+              padding: 50px 50px 0 50px;
+
+              div {
+                h1 {
+                  font-size: 24px;
+                }
+                p {
+                  font-size: 16px;
+                }
+                div {
+                  p {
+                    font-size: 16px;
+                  }
+                  img {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .cards {
+        padding: 70px 20px;
+        .container {
+          gap: 9px;
+          .card__active {
+            padding: 10px;
+            h1 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+            img {
+              width: 100%;
+              height: 150px;
+            }
+          }
+        }
+      }
+      .truck__team {
+        .container {
+          .truck__team-text {
+            padding: 100px 40px;
+            h1 {
+              font-size: 36px;
+            }
+            p {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .career {
+        .container {
+          .values {
+            gap: 50px;
+          }
+          .career__bott {
+            margin-right: 30px;
+
+            margin-left: 80px;
+
+            display: flex;
+            .career__bott-left {
+              padding: 40px;
+            }
+            .career__bott-right {
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .career__socials {
+            div {
+              padding: 0 70px;
+              display: flex;
+              justify-content: none;
+              gap: 0;
+              img {
+                width: 130px;
+                height: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .footer__top {
+        .container {
+          .footer__top-active {
+            padding: 0 70px;
+            gap: 15px;
+          }
+        }
+      }
+      .foot__bott {
+        .container {
+          .foot__subtitle {
+            padding: 0 70px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    header {
+      .time__header {
+        .header__Left {
+          div {
+            display: none;
+          }
+        }
+      }
+      .header__bottom {
+        .container {
+          div {
+            h1 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 15px;
+            }
+            .header__bottom-btn {
+              display: block;
+              button {
+                margin-bottom: 10px;
+              }
+            }
+          }
+          :last-child {
+            display: none;
+          }
+        }
+      }
+    }
+    .fact {
+      display: block;
+      img {
+        width: 90%;
+      }
+      .herader__stat {
+        display: flex;
+        div {
+          gap: 4%;
+          display: flex;
+          div {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+    main {
+      .about {
+        .about__top {
+          flex-direction: column-reverse;
+          .container {
+            .about__top-left {
+              div {
+                h1 {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+          .about__top-right {
+            img {
+              width: 100%;
+            }
+          }
+        }
+        .about__bottom {
+          flex-direction: column;
+          .about__top-left {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .cards {
+        .container {
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .card__active {
+            max-width: 260px;
+            margin-bottom: 40px;
+          }
+        }
+      }
+      .career {
+        .container {
+          .values {
+            padding: 20px;
+            flex-direction: column;
+            .values__text {
+              gap: 10px;
+            }
+          }
+        }
+      }
+
+      .career {
+        .career__bott {
+          .career__bott-left {
+            margin-left: -100px;
+          }
+          .career__bott-right {
+            img {
+              width: 106.8%;
+              margin-right: -50px;
+            }
+          }
+        }
+        .career__socials {
+          h1 {
+            font-size: 24px;
+          }
+          .career__social {
+            padding: 0 20px;
+            img {
+              width: 60px;
+              height: 60px;
+            }
+          }
+        }
+      }
+    }
+    footer {
+      .footer__top {
+        .container {
+          .footer__top-active {
+            gap: 0px;
+            padding: 0 20px;
+            :nth-child(3) {
+              max-width: 100px;
+              .list__text {
+                display: block;
+              }
+            }
+            :nth-child(2) {
+              .list__text {
+                display: block;
+              }
+            }
+
+            .list__title {
+              display: none;
+            }
+          }
+        }
+      }
+      .footer__bottom {
+        .container {
+          .foot__subtitle {
+            flex-direction: column;
+            row-gap: 15px;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    header {
+      height: 300px;
+      .time__header {
+        .header__Left {
+          a {
+            img {
+              width: 148px;
+              height: 25px;
+            }
+          }
+        }
+        .header__Right {
+          padding-right: 4%;
+
+          button {
+            display: none;
+          }
+        }
+      }
+      .header__bottom {
+        display: none;
+      }
+    }
+
+    .header__bott-one {
+      display: block;
+      background-color: rgb(33, 37, 41);
+      padding: 4%;
+      .container {
+        div {
+          h1 {
+            color: white;
+          }
+          p {
+            color: white;
+          }
+          .header__bottom-btn {
+            display: none;
+          }
+          .header_bottom-btntwo {
+            display: block;
+            padding-top: 5%;
+            row-gap: 10px;
+            button {
+              margin-top: 10px;
+              background-color: transparent;
+              border-color: white;
+              padding: 3%;
+              width: 100%;
+              color: rgb(243, 243, 243);
+              font-size: 20px;
+              font-weight: 600;
+            }
+            button:hover {
+              background: rgb(106, 54, 156);
+            }
+          }
+        }
+
+        :last-child {
+          display: none;
+        }
+      }
+    }
+    .fact {
+      .herader__stat {
+        flex-direction: column;
+        div {
+          display: flex;
+          div {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    main {
+      .about {
+        .about__top {
+          .container {
+            .about__top-left {
+              padding: 10%;
+            }
+          }
+        }
+        .about__bottom {
+          .container {
+            .about__top-left {
+              padding: 10%;
+            }
+          }
+        }
+      }
+      .cards {
+        .container {
+          .card__active {
+            margin: 0 auto;
+          }
+        }
+      }
+      .truck__team {
+        background-image: url("../image/bacround/bacimg.png");
+        .container {
+          .truck__team-text {
+            padding-top: 200px;
+            h1 {
+              font-size: 20px;
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .career {
+        .container {
+          .values {
+            .values__text {
+              flex-direction: column;
+              padding: 5%;
+              div {
+                ul {
+                  list-style: circle;
+                  li::marker {
+                    color: white;
+                  }
+                }
+              }
+            }
+          }
+          .career__bott {
+            flex-direction: column-reverse;
+            .career__bott-left {
+              button {
+                width: 100%;
+              }
+              width: 110%;
+            }
+            .career__bott-right {
+              margin-left: -80px;
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .career__socials {
+            .career__social {
+              flex-direction: column;
+              padding: 0;
+              img {
+                margin: 0 auto;
+                width: 60%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    footer {
+      .footer__top {
+        .container {
+          .footer__top-active {
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 10px;
+
+            div {
+              margin-bottom: 10px;
+              flex-direction: column;
+              h1 {
+                width: 100%;
+              }
+              p {
+                width: 100%;
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
